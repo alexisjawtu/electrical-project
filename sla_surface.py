@@ -25,3 +25,5 @@ def f(x):
 	return 4*x/3
 
 print(f(f(sla)), " square meters")
+
+print("living room surface ", 5.15 * 3.63, " m2")
