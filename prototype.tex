@@ -1,8 +1,34 @@
 % prototype.tex
 
+% TODO: completar la ficha esa en la fotocopia con la cantidad de bocas por circuito.
+%       Está en la carpeta amarilla
+
 1.
-sla 						= 79 metros cuadrados
+sla (aproximado) 			= 79 metros cuadrados
 grado de electrificaci\'on 	= medio
+
+Cómo 
+
+f: Pulgadas --> Metros
+f(x) = m*x
+
+como f(5.25) = 7, entonces
+     
+     f(5.25) = m*5.25 = 7
+    
+con lo cual
+
+	m = 7 / 5.25 = 4/3 ~= 1.33
+	
+Entonces la conversión queda:
+
+			+------------------------+
+			| f: Pulgadas --> Metros |
+			|						 |
+			|         4              |
+			| f(x) = --- * x         |
+			|         3              |
+			+------------------------+
 
 2. Determinar la corriente de proyecto
 
@@ -24,12 +50,100 @@ cual se deben tener en cuenta todos los consumos proyectados. (\ref Guía secc. 
 
 Comedor: área menor o igual a 
 
-	5.15 x 3.63 = 18.7 (metros cuadrados). 
+	5.15 x 3.63 = 18.7 (metros cuadrados),
+	
+y esta es el área que usamos en las tablas adjuntas en el proyecto. 
 
 Calculando por exceso los PMUS
 para esta superficie tenemos cubiertos los puntos mínimos requeridos para la superficie real.
 Hacemos esto por simplicidad, por la geometría particular del ambiente.
 
 Por la tabla del principio, con dos bocas IUG y 4 bocas TUG estamos cumpliendo con los PMUs para este ambiente.
+
+Ponemos el timbre de entrada como una boca IUG más pues en la página 25 de la Guía AEA
+podemos leer:
+
+		"...la alimentación a las fuentes de los circuitos MBTF (muy baja tensión
+		funcional) puede hacerse desde circuitos IUG, donde cada uno de ellos se 
+		contará como una boca de Iluminación de usos Generales, tanto para la 
+		potencia como para el número de bocas..."
+
+
+En los dormitorios 2 y 3 presupuestamos dos bocas IUG porque en cada uno
+instalaremos una boca en donde funcionará un artefacto combinado de 
+ventilados con luces.
+
+
+Ambas columnas de IUG y TUG superan las quince bocas con lo cual
+dividiremos al conjunto de bocas para tener circuitos que cumplan
+con este máximo.
+
+
+El tablero seccional principal irá instalado en la cocina, en la pared
+detrás de la puerta.
+
+Circuitos enumerados con 1: dormitorios (1, 2 y 3), baño, pasillo y galería.
+Circuitos enumerados con 2: comedor, cocina, recibidor.
+
+
+DPMS:
+
+Según la Tabla 770.8.I de la reglamentación de AEA y las tablas de la página
+22 de la Guía AEA, tenemos lo siguiente.
+
+Circuitos IUG:
+
+Valor de potencia estimado (si no se conoce la carga real): 60 VA por boca
+corregido por el factor de simultaneidad 2/3.
+
+Intensidad nominal de ITM de protección <= 16A
+
+Sección de los cables de fase y neutro >= 1.5 mm2
+
+Circuitos TUG:
+
+Valor de potencia estimado (si no se conoce la carga real): 2200 VA por circuito.
+
+Intensidad nominal de ITM de protección <= 20A
+
+Sección de los cables de fase y neutro >= 1.5 mm2
+
+
+
+Entonces en nuestro proyecto determinamos:
+
+Circuito IUG-1 (9 bocas): 9 x 60 x 2/3 VA = 360 VA 
+Circuito IUG-2 (9 bocas): 9 x 60 x 2/3 VA = 360 VA
+Circuito TUG-1:                            2200 VA
+Circuito TUG-2:                            2200 VA
+Circuito TUG-Acondicionador de Aire:       2200 VA  
+
+DPMS resultante                            7320 VA
+
+3) Tipo de canalización embutida de p.v.c. rígido.
+
+4) Una vez dererminada la DPMS, estamos en condiciones de elegir los cables de acuerdo
+con su forma de instalación y factores de agrupamiento.
+
+5) Cuadro eléctrico. 
+En el tablero principal de la acometida del medidor instalamos un
+Interruptor termo-magnético con intensidad nominal de X amperios.
+
+El tablero seccional principal (T.S.P.) se conforma con
+1 Interruptor diferencial
+1 Interruptor termo-magnético (TUG-1)
+
+7) Cuadro de referencia de la simbología eléctrica (ver el diagrama unifilar en el reverso del plano)
+
+
+9) Cálculo de materiales.
+
+10) Simblogía presente en los planos entregados.
+
+11) Presupuesto de mano de obra con última fecha de validez del importe.
+
+
+
+
 
 

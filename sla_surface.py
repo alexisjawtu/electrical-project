@@ -18,6 +18,12 @@ semicub = [
 	1.18*1.12
 ]
 
+print("dormitorio 1 ", 3.25 * 2.9)
+print("dormitorio 2 ", 2.93 * 2.6)
+print("dormitorio 3 ", 3.19 * 2.9)
+
+
+
 sla = sum(cub) + sum(semicub)/2
 print(sla, " square inches")
 
@@ -27,3 +33,4 @@ def f(x):
 print(f(f(sla)), " square meters")
 
 print("living room surface ", 5.15 * 3.63, " m2")
+print("semicub", sum(semicub))
