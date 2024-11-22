@@ -1,16 +1,15 @@
 % prototype.tex
 
-% TODO: completar la ficha esa en la fotocopia con la cantidad de bocas por circuito.
-%       Está en la carpeta amarilla
 
-0. estamos suponiendo Intensidad de corriente presunta de cortocircuito en el origen de la instalación 
-no mayor a 10 kAmps.
+1) Superficie y grado de electrificación del inmueble
 
-1.
-sla (aproximado) 			= 79 metros cuadrados
-grado de electrificaci\'on 	= medio
+Estamos suponiendo Intensidad de corriente presunta de cortocircuito
+en el origen de la instalación no mayor a 10 kAmps.
 
-Cómo 
+S.L.A. (aproximado)		= 79 metros cuadrados
+grado de electrificación 	= medio
+
+Cómo obtuvimos la S.L.A.:
 
 f: Pulgadas --> Metros
 f(x) = m*x
@@ -33,8 +32,7 @@ Entonces la conversión queda:
 			|         3              |
 			+------------------------+
 
-2. Determinar la corriente de proyecto
-
+2) y 6) (juntos) Determinar la corriente de proyecto y Determinar los circuitos correspondientes.
 
 PMUs := puntos m\ínimos de utilizaci\'on
 		(cantidades m\'inimas de bocas de ilum y de tomacorrientes)
@@ -44,8 +42,8 @@ PMUs := puntos m\ínimos de utilizaci\'on
 			
 Para grado medio:
 
-\textbf{IUG}: 1 boca cada 18 m2 o fracción. Como mínimo una boca.
-\textbf{TUG}: 1 boca cada  6 m2 o fracción. Como mínimo dos bocas.
+IUG: 1 boca cada 18 m2 o fracción. Como mínimo una boca.
+TUG: 1 boca cada  6 m2 o fracción. Como mínimo dos bocas.
 			
 El agregado de m\'as bocas o m\'as circuitos no afecta el grado de electrificaci\'on.
 No obstante, s\'i impacta en la demanda de potencia máxima simultánea (DPMS), para la
@@ -57,8 +55,7 @@ Comedor: área menor o igual a
 	
 y esta es el área que usamos en las tablas adjuntas en el proyecto. 
 
-Calculando por exceso los PMUS
-para esta superficie tenemos cubiertos los puntos mínimos requeridos para la superficie real.
+Calculando por exceso los PMUS para esta superficie tenemos cubiertos los puntos mínimos requeridos para la superficie real.
 Hacemos esto por simplicidad, por la geometría particular del ambiente.
 
 Por la tabla del principio, con dos bocas IUG y 4 bocas TUG estamos cumpliendo con los PMUs para este ambiente.
@@ -88,7 +85,6 @@ detrás de la puerta.
 Circuitos enumerados con 1: dormitorios (1, 2 y 3), baño, pasillo y galería.
 Circuitos enumerados con 2: comedor, cocina, recibidor.
 
-
 DPMS:
 
 Según la Tabla 770.8.I de la reglamentación de AEA y las tablas de la página
@@ -111,8 +107,6 @@ Intensidad nominal de ITM de protección <= 20A
 
 Sección de los cables de fase y neutro >= 1.5 mm2
 
-
-
 Entonces en nuestro proyecto determinamos:
 
 Circuito IUG-1 (9 bocas): 9 x 60 x 2/3 VA = 360 VA 
@@ -120,12 +114,24 @@ Circuito IUG-2 (9 bocas): 9 x 60 x 2/3 VA = 360 VA
 Circuito TUG-1:                            2200 VA
 Circuito TUG-2:                            2200 VA
 Circuito TUG-Acondicionador de Aire:       2200 VA  
-
+--------------------------------------------------
 DPMS resultante                            7320 VA
 
-3) Tipo de canalización embutida de p.v.c. rígido.
+Cálculo de corriente de uso (IB) para bocas IUG:  360/220 Amps =  1.64 Amps
+Cálculo de corriente de uso (IB) para bocas TUG: 2200/220 Amps = 10    Amps
 
-4) Una vez dererminada la DPMS, estamos en condiciones de elegir los cables de acuerdo
+3) Determinar el tipo de canalización.
+
+Tipo de canalización embutida de p.v.c. corrugado con accesorios del mismo sistema de 
+material aislante.
+
+Vamos a instalar una cañería por circuito para no quedar restringidos a quince bocas según 
+AEA 770.10.3.8.2 inciso d, en donde se aclara que la suma de las cantidades de bocas de 
+los circuitos que compartan conductos no puede exceder ese número. 
+
+4) Determinar el calibre de los conductores.
+
+Una vez dererminada la DPMS, estamos en condiciones de elegir los cables de acuerdo
 con su forma de instalación y factores de agrupamiento.
 
 El proyecto no tiene circuitos de uso especial ni cargas específicas con lo que 
@@ -133,35 +139,49 @@ la carga total es exactamente la DPMS para el grado de electrificación.
 
 Para la Iz de los cables estamos tomando en cuenta que los circuitos recorren cañerías
 embutidas y lo forman cables según norma IRAM NM 247-3.
-5) Cuadro eléctrico. 
-En el tablero principal de la acometida del medidor instalamos un
-Interruptor termo-magnético con intensidad nominal de X amperios.
 
-El tablero seccional principal (T.S.P.) se conforma con
-1 Interruptor diferencial
-1 Interruptor termo-magnético (TUG-1)
+5) Determinar el cuadro eléctrico; su conformación.
+ 
+Tablero Principal (TP)
+*Instalado en la acometida del medidor. 
+
+Conformación:
+*Caja estanco.
+*Interruptor termo-magnético con intensidad nominal de X amperios.
+*La barra de tierra, que se usará como punto de ingreso del conductor de P. a T. a la instalación, con
+         -pletina con perforaciones roscadas para tornillos
+	 -seis o más bornes de P. a T. montados sobre riel DIN.
+
+Tablero Seccional Principal (T.S.P.)
+*Se instalará detrás de una de las puertas de la cocina como se indica en los planos 
+
+Conformación:
+*1 Interruptor diferencial
+*1 Interruptor termo-magnético (TUG-1)
+*1 Interruptor termo-magnético (TUG-2)
+*1 Interruptor termo-magnético (TUG-A.A.)
+*1 Interruptor termo-magnético (IUG-1)
+*1 Interruptor termo-magnético (IUG-2)
+
+6) Determinar los circuitos correspondientes
+
+Ver el punto 2).
 
 7) Cuadro de referencia de la simbología eléctrica (ver el diagrama unifilar en el reverso del plano)
 
 8) Puesta a tierra
-* Una jabalina de hierro con baño electrolítico de cobre
-* Un morceto de bronce
-* Una caja plástica de inspección
-* Una bornera de bronce para el tablero principal
-* Cable con vaina verde y amarilla con superficie seccional de 4 milímetros cuadrados.
+* Una jabalina cilíndrica de hierro con baño electrolítico de cobre IRAM 2309 o 2310.
+* Un tomacable de bronce
+* Una caja plástica de inspección con tapa removible
+* Una barra de tierra para el tablero principal
+* Cable con vaina verde y amarilla con superficie seccional de 4 milímetros cuadrados para conectar
+el tomacable de la jabalina con la barra del tablero principal.
 
 9) Cálculo de materiales.
 
-10) Simblogía presente en los planos entregados.
+Presupuesto de mano de obra 
+===========================
 
-11) Presupuesto de mano de obra con última fecha de validez del importe.
-
-
-
-
-
-
-corriente de uso IB = 360/220 Amps = 1.64 Amps
-
-
+Última fecha de validez del importe:
+====================================
 
