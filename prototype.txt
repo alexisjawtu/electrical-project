@@ -184,6 +184,508 @@ el tomacable de la jabalina con la barra del tablero principal.
 
 9) Cálculo de materiales.
 
+Ver las últimas tablas al final.
+
+
+
+                                Tabla 0
+
+Conteo de P.M.U.s
+
+
+
+
+
+
+habitación
+SLA m² (aproximada)
+Bocas IUG a instalar
+Bocas TUG a instalar
+comedor
+18.7
+3
+4 dobles
+dormitorio 1
+9.43
+1
+3 dobles + 1 simple = 4
+Dormitorio 2
+7.62
+2 (luz + ventilador)
+3 dobles
+Dormitorio 3
+9.25
+2 (luz + ventilador)
+3 dobles
+cocina
+(no corresponde)
+4
+4 dobles + 1 simple = 5
+baño
+(no corresponde)
+1
+1 doble
+recibidor
+6.37
+1 + timbre = 2
+1 doble
+pasillo
+3.25
+1
+1 doble
+galería
+2.4 / 2
+2
+0
+suma
+
+18 bocas
+22 bocas
+
+
+
+
+
+
+
+
+
+
+                             Tabla 1
+
+Subdivisión de Circuitos
+
+
+
+
+
+
+
+
+
+
+
+habitación
+IUG-1
+TUG-1
+IUG-2
+TUG-2
+TUG-A.A.
+comedor
+--
+--
+3
+4
+--
+dormitorio 1
+1
+3
+--
+--
+1
+Dormitorio 2
+2
+3
+--
+--
+--
+Dormitorio 3
+2
+3
+--
+--
+--
+cocina
+--
+--
+4
+5
+--
+baño
+1
+1
+--
+--
+--
+recibidor
+--
+--
+2
+1
+--
+pasillo
+1
+1
+--
+--
+--
+galería
+--
+--
+2
+--
+--
+Totales
+7 bocas
+12 bocas
+11 bocas
+10 bocas
+1 boca
+
+
+
+
+
+                                                                       Tabla 2
+
+Demandas y Corrientes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IUG-1
+TUG-1
+IUG-2
+TUG-2
+TUG-A.A.
+Seccional
+Cantidad de bocas
+9 bocas
+12 bocas
+9 bocas
+10 bocas
+1 boca
+
+DPMS (VA)
+360
+2200
+360
+2200
+2200
+6960
+Tensión (V)
+220
+220
+220
+220
+220
+220
+IB (A) de cada boca
+1.64
+10
+1.64
+10
+10
+33.28
+Sección Línea y Neutro (mm2)
+1.5
+2.5
+1.5
+2.5
+2.5
+4
+Sección Puesta a Tierra (mm2)
+2.5
+2.5
+2.5
+2.5
+2.5
+4
+IZ (A) de los cables
+15
+21
+15
+21
+21
+28
+IN (A) del ITM
+10
+16
+10
+16
+16
+25
+
+
+
+                                                Tabla 3
+0
+Insumos por Habitación
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+B
+C
+D1
+D2
+D3
+P
+EC
+R
+G
+Suma
+Caja Octogonal embutida
+1
+4
+2
+2
+1
+2
+4
+1
+2
+15
+Conectores p.v.c.
+7
+9
+10
+9
+7
+31
+15
+7
+4
+99
+Caja 10 x 5 embutida p.v.c.
+2
+8
+4
+4
+4
+3
+6
+2
+1
+34
+Módulo toma
+2
+9
+6
+6
+6
+2
+8
+2
+0
+41
+Módulo tecla
+1
+4
+1
+2
+2
+0
+2
+2
+0
+14
+Módulo tecla combinada
+0
+0
+0
+0
+0
+2
+0
+0
+0
+2
+Módulo timbre
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+
+Referencias para la Tabla 3:
+
+B = Baño
+C = Cocina
+D1 = Dormitorio 1
+D2 = Dormitorio 2
+D3 = Dormitorio 3
+P = Pasillo
+EC = Estar Comedor
+R = Recibidor
+G = Galería
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                     Tabla 4
+
+Insumos por Circuito
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IUG-1
+IUG-2
+TUG-1
+TUG-2
+TUG-A.A.
+Secccional
+Caño Corrugado 20 mm sección
+0
+0
+29 mts
+17 mts
+8 mts
+7 mts
+Caño Corrugado 16 mm sección
+36 mts
+45 mts
+0
+0
+0
+0
+Cable 2.5 mm2 celeste
+0
+0
+29 mts
+17 mts
+8 mts
+0
+Cable 2.5 mm2 marrón
+0
+0
+29 mts
+17 mts
+8 mts
+0
+Cable 1.5 mm2 celeste
+36 mts
+45 mts
+0
+0
+0
+0
+Cable 1.5 mm2 marrón
+36 mts
+45 mts
+0
+0
+0
+0
+
+
+
+                         Tabla 5              
+
+Insumos Generales
+
+
+
+ITM 32 A
+1
+ITM 10 A
+2
+ITM 16 A
+3
+ID    40 A
+1
+Caja tablero estanca
+1
+Caja tablero embutida
+1
+Cable 6 mm2 Marrón
+15 mts
+Cable 6 mm2 Celeste
+15 mts
+Jabalina
+1
+Caja inspección
+1
+Prenscable
+1
+Barra P. a T.
+1
+Cable 4 mm2 verde/amarillo
+2 mts
+Caño p.v.c. rígido doblado en frío
+9 mts
+Caja estanca 10 x 10 exterior
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Presupuesto de mano de obra 
 ===========================
 
