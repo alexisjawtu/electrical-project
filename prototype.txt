@@ -188,7 +188,8 @@ Ver las últimas tablas al final.
 
 
 
-                                Tabla 0
+                                Tabla 1
+
 
 Conteo de P.M.U.s
 
@@ -199,8 +200,8 @@ Conteo de P.M.U.s
 
 habitación
 SLA m² (aproximada)
-Bocas IUG a instalar
-Bocas TUG a instalar
+bocas IUG a instalar
+bocas TUG a instalar
 comedor
 18.7
 3
@@ -241,6 +242,7 @@ suma
 
 18 bocas
 22 bocas
+
 
 
 
